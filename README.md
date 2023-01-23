@@ -15,28 +15,44 @@ First, clone the repository to your local machine:
 
 ```bash
 git clone https://github.com/sibtc/django-multiple-user-types-example.git
+cd django-multiple-user-types-example
 ```
 
-Install the requirements:
+### Create a virtual environment
+
+First install [Pipenv](https://pipenv.pypa.io/en/latest/), if you don't have it.
+
+```bash
+python3 -m pip install pipenv
+```
+
+then activate the virtual env shell
+
+```bash
+python3 -m pipenv shell
+```
+
+It will activate the virtual environment in the terminal
+
+### Install the requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Create the database:
+### Create the database
 
 ```bash
 python manage.py migrate
 ```
 
-Finally, run the development server:
+### Finally, run the development server
 
 ```bash
 python manage.py runserver
 ```
 
 The project will be available at **127.0.0.1:8000**.
-
 
 ## License
 
